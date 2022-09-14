@@ -15,12 +15,12 @@
           
 <!-- Навігація -->
                 <nav class="menu">
-                    <a href="./index.html" class="logo link"><span class="logo-blue">Web</span><span
+                    <a href="./index.html" class="logo link"><span class="logo-blue link-logo">Web</span><span
                         class="logo-black">Studio</span></a> 
                 <ul class="list list-flex">
-                    <li><a href="./index.html" class="link current link-nav">Студія</a></li>
-                    <li> <a href="./portfolio.html" class="menu-nav link link-nav">Портфоліо</a></li>
-                    <li> <a href="./" class="menu-nav link link-nav">Контакти</a></li>
+                    <li class="item"><a href="./index.html" class="link link-current current link-nav">Студія</a></li>
+                    <li class="item"> <a href="./portfolio.html" class="menu-nav link link-nav">Портфоліо</a></li>
+                    <li class="item"> <a href="./" class="menu-nav link link-nav">Контакти</a></li>
 <!-- Контакти  -->
                 </ul>
                 </nav>
@@ -46,7 +46,7 @@
             <div class="container">
                 <div class="hero-container">
                     <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                    <button type="button" class="hero-button hero-btn">Замовити послугу</button>
+                    <button type="button" class="hero-button hero-btn" data-modal-open>Замовити послугу</button>
                 </div>
             </div>
         </section>
@@ -346,7 +346,7 @@
                 <a href="./index.html" class="logo link logo-white" lang="en"><span class="logo-blue">Web</span><span
                     class="footer-studio">Studio</span></a>
                 <address>
-                  <ul class="contacts-list">
+                  <ul class="contacts list">
                    <li class="logo-white">
                      <a href="https://www.google.com/maps/d/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&h" target="_blank" rel="noreferrer noopener"
                         class="link footer-list "><span class="footer-address">
@@ -398,11 +398,11 @@
         </div> 
   </footer>
   <!-- Модальне вікно  -->
- <div class="modal-bg is-hidden " data-modal>
-  <div class="modal-form">
-    <button class="modal-close "data-modal- close>
-      <svg class=" modal-icon">
-        <use href="./images/icons.svg.svg#icon-cl"></use>
+ <div class=" backdrop is-hidden " data-modal>
+  <div class="modal">
+    <button class="close-button " type="button "data-modal-close>
+      <svg class=" close-sing" height="11" width="11"> 
+        <use href="./images/icons.svg.svg#icon-close-1"></use>
       </svg>
     </button>
   </div>
