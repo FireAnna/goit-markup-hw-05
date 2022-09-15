@@ -112,6 +112,7 @@ ul{
 .link {
   text-decoration: none;
   list-style: none;
+  transition: color 250ms var(--cubic);
 
 }
 
@@ -310,7 +311,7 @@ padding: 24px 0px;
   color: var(--title-color);
   border-radius: 4px;
   border-color: transparent;
-  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
+  
 }
 
 .hero-button:hover,
@@ -506,7 +507,7 @@ padding: 24px 0px;
 .social-icon {
   width: 20px;
   height: 20px;
-  transition: fill var(--team-social-icon)}
+  transition: fill var(--team-social-icon)}transition: background-color 250ms var(--cubic);
 
 .social-link:hover,
 .social-link:focus,
@@ -607,6 +608,7 @@ padding: 24px 0px;
 .footer-list {
   display: inline-block;
   margin-bottom: 9px;
+  transition: color 250ms var(--cubic); 
 }
 .footer-social {
   width: 206px;
@@ -695,8 +697,9 @@ padding: 24px 0px;
   letter-spacing: inherit;
   color: var(--primary-text-color);
   background-color: var(--team-background-color);
-  transition:  color var(--accent-color) ; background-color: var(--cubic); box-shadow: var(--cubic);
-  
+  transition:  color 250ms var(--cubic),
+  box-shadow 250ms var(--cubic),
+  background-color 250ms var(--cubic);
   }
 
 
@@ -816,11 +819,8 @@ transition: box-shadow var(--cubic);
   background: rgba(33, 150, 243, 0.9);
   padding: 50px 24px;
   transform: translateY(101%);
-  transition: transform var(--cubic), background var(--cubic);
-  -webkit-transform: translateY(101%);
-  -moz-transform: translateY(101%);
-  -ms-transform: translateY(101%);
-  -o-transform: translateY(101%);
+  transition: transform 250ms var(--cubic) ;
+
 }
 .overlay > p {
   font-weight: 400;
@@ -831,8 +831,8 @@ transition: box-shadow var(--cubic);
   transition: var(--cubic);
 }
 
-.portfolio-element:hover .overlay,
-.portfolio-element:focus-within .overlay {
+.portfolio-overlay:hover .overlay,
+.portfolio-overlay:focus-within .overlay {
   transform: translateY(0);
 }
 
