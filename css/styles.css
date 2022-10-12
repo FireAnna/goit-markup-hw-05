@@ -507,7 +507,8 @@ padding: 24px 0px;
 .social-icon {
   width: 20px;
   height: 20px;
-  transition: fill var(--team-social-icon)}transition: background-color 250ms var(--cubic);
+  transition: fill var(--team-social-icon)
+  }
 
 .social-link:hover,
 .social-link:focus,
@@ -516,6 +517,8 @@ padding: 24px 0px;
   background-color: var(--accent-color);
   color: var(--title-color);
 }
+
+
 
 /*----------Our customers----------*/
 .customers {
@@ -573,7 +576,10 @@ padding: 24px 0px;
   padding-bottom: 60px;
 
 }
-
+.footer-list:hover .footer-address,
+.footer-list:focus .footer-address {
+  color: var(--accent-color);
+}
 .footer-wrapper {
   text-align: left;
   margin-right: 70px;
