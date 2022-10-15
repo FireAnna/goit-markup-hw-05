@@ -557,7 +557,7 @@ padding: 24px 0px;
   border: 1px solid var(--team-social-icon);
   border-radius: 4px;
   transition: border 250ms var(--cubic);
-  transition: color 250ms var(--cubic);
+   transition: color 250ms var(--cubic);
 }
 
 .client-icon {
@@ -651,6 +651,7 @@ padding: 24px 0px;
   left: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.2);
+  transition-timing-function: var(--cubic);
 }
 
 .modal-form {
